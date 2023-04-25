@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f3f3f3;
+}
+
+.image-search-page{
+  padding: 70px 250px;
+}
+
+.search-container{
+  padding-top: 15px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.search-container input{
+  width: 90%;
+  font-size: 16px;
+  padding: 7px 15px;
+  border-radius: 20px;
+}
+
+.search-button{
+  padding: 0 20px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid gray;
+}
+
+.images-container{
+  margin-top: 50px;
+  display: grid;
+  grid-gap:1rem;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  
+}
+
+.image-container{
+  position: relative;
+}
+
+.searched-image{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.bookmark-buttons{
+  display: none;
+  position: absolute;
+  bottom:10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.bookmark-buttons button{
+  cursor: pointer;
+  padding: 5px;
+
+}
+
+.image-container:hover .bookmark-buttons{
+  display: flex;
+}
+
+.bookmarks-button{
+  margin-right: 10px;
+  padding: 7px 20px;
+  background-color: #241f1f;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid #241f1f;
+}
+
+.bookmarks-button:hover{
+  background-color: #706a6a;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
